@@ -3,13 +3,12 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { PersonModule } from './modules/person/person.module';
-import { PersonResolver } from './modules/person/person.resolver';
 
 @Module({
   imports: [
     PersonModule,
     GraphQLModule.forRoot({
-      autoSchemaFile: true,
+      autoSchemaFile: 'person.gql',
       debug: true,
       playground: process.env.NODE_ENV !== 'production',
     }),
