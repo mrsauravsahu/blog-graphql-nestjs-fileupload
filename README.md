@@ -10,7 +10,7 @@ type Query {
 }
 
 type Mutation {
-  profilePhoto(file: Upload!): Int!
+  coverPhoto(file: Upload!): Int!
 }
 ```
 
