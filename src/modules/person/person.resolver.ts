@@ -1,5 +1,5 @@
 import { Args, Int, Mutation, Query, Resolver } from '@nestjs/graphql';
-import { Person } from 'src/modules/person/person.model';
+import { Person } from './person.model';
 import { GraphQLUpload, FileUpload } from 'graphql-upload';
 import * as fs from 'fs/promises';
 
